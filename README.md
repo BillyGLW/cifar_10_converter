@@ -10,4 +10,4 @@ ad-hoc tool do not expect too much, enough for educational purposes
 ### Export single image to CIFAR10
 `python main.py --data image.png --out file.bin --mode 1 `
 
-source: https://www.cs.toronto.edu/~kriz/cifar.html (binary version)
+source: [Cifar-10 doc](https://www.cs.toronto.edu/~kriz/cifar.html) (binary version)
