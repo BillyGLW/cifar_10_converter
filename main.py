@@ -1,8 +1,7 @@
+#!/usr/bin/env python3
 import argparse
 
 import os
-
-# from cifer10 import Png_to_cifer as pngtocif
 
 from PIL import Image
 import numpy as np
@@ -12,7 +11,6 @@ import struct
 def parse():
 	parser = argparse.ArgumentParser(description='png2cifar10')
 	parser.add_argument('--mode', type=int, default=0, help='0 - PNG to CIFER10 (.bin) format, 1 - CIFER10 to PNG format.')
-	# parser.add_argument('--count', type=int, default=None)
 	parser.add_argument('--data', type=str, default=None, help='Input data.')
 	parser.add_argument('--out', type=str, default='file_', help='Output data.')
 	parser.add_argument('--all', type=str, default=None, help='Input data with png multiple files.')
@@ -62,12 +60,9 @@ def cifer10_handler(filename, out='file_', transpose=0):
 if __name__ == "__main__":
 	args = parse()
 	if args.mode:
-		# PNG > CIFER10
 		# 3073 size of single image with label
 		png_handler(args.data, 'data\\bin', args.out, args.all)
 	elif args.mode == 0:
-		# CIFER10 > PNG
 		from_bin_to_png = cifer10_handler(args.data, args.out)
-		# from_bin_to_png.save("data/images/%s" % args.out, format='png')
 	else:
 		print("No mode value")
