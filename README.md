@@ -12,5 +12,5 @@ ad-hoc tool do not expect too much, enough for educational purposes
 
 <dl>
   <dt>Source</dt>
-  <dd>[Cifar-10 docs](https://www.cs.toronto.edu/~kriz/cifar.html) (binary version)</dd>
+  <dd>Cifar-10 docs https://www.cs.toronto.edu/~kriz/cifar.html</dd>
 </dl>
